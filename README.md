@@ -1,35 +1,16 @@
 # help-me-eat
 
-This template should help get you started developing with Vue 3 in Vite.
+For all the times you can't decide what to eat
 
-## Recommended IDE Setup
+## 🛠 Built With
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+⚡ [Headless UI](https://headlessui.com/) \
+⚡ [Heroicons](https://heroicons.com/) \
+⚡ [Tailwind CSS](https://tailwindcss.com/) \
+⚡ [Tailwind UI](https://tailwindui.com/) \
+⚡ [VueJS 3](https://vuejs.org/) \
+⚡ [VueUse](https://vueuse.org/)
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Made with ♥ from Georgetown, Guyana ✈
