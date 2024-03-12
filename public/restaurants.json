@@ -6,7 +6,9 @@
         ],
         "price": [
             1800
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "Jade's Wok",
@@ -15,7 +17,9 @@
         ],
         "price": [
             1300
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "Kamboat",
@@ -24,7 +28,9 @@
         ],
         "price": [
             2000
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "Ken's Creole",
@@ -33,7 +39,9 @@
         ],
         "price": [
             900
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "KFC",
@@ -44,7 +52,9 @@
         "price": [
             1700,
             1660
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "Mezze",
@@ -53,7 +63,9 @@
         ],
         "price": [
             2200
-        ]
+        ],
+        "contact": [],
+        "notes": ""
     },
     {
         "name": "Royal Castle",
@@ -62,6 +74,51 @@
         ],
         "price": [
             1800
-        ]
+        ],
+        "contact": [],
+        "notes": ""
+    },
+    {
+        "name": "",
+        "menu": [
+            "Spanish"
+        ],
+        "price": [
+            15000
+        ],
+        "contact": [],
+        "notes": ""
+    },
+    {
+        "name": "Royal Lucy's Grill & Juice",
+        "menu": [
+            "Burger Special",
+            "Burger Mix 1",
+            "Burger Mix 3",
+            "Burger Mix 4",
+            "Lucy's Mix Combo",
+            "Mega Mix",
+            "Taco Combo",
+            "Taco Mix",
+            "Wrap Combo",
+            "Lunch Special (varies per day)"
+        ],
+        "price": [
+            2400,
+            2400,
+            2500,
+            2500,
+            2400,
+            2800,
+            2500,
+            2500,
+            2400,
+            1800
+        ],
+        "contact": [
+            6510012,
+            6918005
+        ],
+        "notes": "Payments can be made through MMG to 6510012"
     }
 ]
