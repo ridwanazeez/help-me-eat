@@ -14,7 +14,7 @@
               Help Me Eat
             </h2>
             <p class="text-center text-sm dark:text-white">
-              v{{ version }} | Last updated: 07/03/2024
+              v{{ version }} | Last updated: 12/03/2024
             </p>
             <p class="mt-4 text-center font-medium text-gray-500 dark:text-white">
               For all the times you can't decide what to eat...
