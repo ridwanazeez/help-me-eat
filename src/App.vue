@@ -90,24 +90,41 @@
                     <div class="mt-2">
                       <table class="w-full table-auto">
                         <tr>
-                          <th class="text-left" colspan="2">Restaurant:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-2 text-left" colspan="2">Restaurant:</th>
+                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-2 text-right">
                             {{ choice.restaurant }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="text-left" colspan="2">Item:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-2 text-left" colspan="2">Item:</th>
+                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-2 text-right">
                             {{ choice.item }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="text-left" colspan="2">Price:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-2 text-left" colspan="2">Price:</th>
+                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-2 text-right">
                             {{ '$ ' + Math.round(choice.price).toLocaleString() + ' ' }}GYD
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="py-2 text-left" colspan="2">Contact:</th>
+                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-2 text-right">
+                            <span v-for="(contact, index) in choice.contact" :key="index">
+                              <a :href="`tel:${contact}`">{{ contact }}</a>
+                              <span v-if="index < choice.contact.length - 1">, </span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="py-2 text-left" colspan="2">Notes:</th>
+                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-2 text-right">
+                            {{ choice.notes }}
                           </td>
                         </tr>
                       </table>
@@ -160,7 +177,9 @@ export default {
       choice: {
         restaurant: '',
         item: '',
-        price: ''
+        price: '',
+        contact: [],
+        notes: ''
       },
       restaurants: []
     }
@@ -207,6 +226,8 @@ export default {
       this.choice.restaurant = randomRestaurant.name
       this.choice.item = randomMenuItem.item
       this.choice.price = randomMenuItem.price
+      this.choice.contact = randomRestaurant.contact
+      this.choice.notes = randomRestaurant.notes
       this.show = !this.show
     }
   }
