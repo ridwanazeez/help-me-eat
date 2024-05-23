@@ -123,9 +123,7 @@
                         <tr>
                           <th class="py-1 text-left align-top" colspan="2">Notes:</th>
                           <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-1 text-right align-top">
-                            {{ choice.notes }}
-                          </td>
+                          <td v-html="choice.notes" class="py-1 text-right align-top"></td>
                         </tr>
                       </table>
                     </div>

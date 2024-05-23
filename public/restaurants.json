@@ -22,7 +22,7 @@
         "notes": ""
     },
     {
-        "name": "Kamboat",
+        "name": "Kamboat Albert Street",
         "menu": [
             "Sweet & Sour Chicken Fried Rice"
         ],
@@ -70,10 +70,12 @@
     {
         "name": "Royal Castle",
         "menu": [
-            "Castle Box"
+            "Castle Box",
+            "Chicken Nuggets Combo"
         ],
         "price": [
-            1800
+            1800,
+            1700
         ],
         "contact": [],
         "notes": ""
@@ -120,5 +122,58 @@
             6918005
         ],
         "notes": "Payments can be made through MMG to 6510012"
+    },
+    {
+        "name": "Dave & Danny's (Movietowne)",
+        "menu": [
+            "Burger Combo w/ Iced Tea/Juice"
+        ],
+        "price": [
+            2260
+        ],
+        "contact": [],
+        "notes": ""
+    },
+    {
+        "name": "Chicken 'n' Burger Delight (Vreed-en-Hoop)",
+        "menu": [
+            "Trooper Burger Combo"
+        ],
+        "price": [
+            2040
+        ],
+        "contact": [],
+        "notes": ""
+    },
+    {
+        "name": "Pizza Hut (Sheriff Street)",
+        "menu": [
+            "Calzone",
+            "Cajun Chicken Alfredo Pasta",
+            "Creamy Chicken Alfredo Pasta",
+            "Vegetarian Alfredo Pasta",
+            "Chicken Diablo Penne Pasta",
+            "Vegetable Garlic Parmesan Pasta",
+            "Chicken Garlic Parmesan Pasta",
+            "Pizza Hut Melts",
+            "Mac n Cheese",
+            "Personal Pan Pizza"
+        ],
+        "price": [
+            1000,
+            2400,
+            2400,
+            1800,
+            2400,
+            1800,
+            2400,
+            1500,
+            1500,
+            1000
+        ],
+        "contact": [
+            2267337
+        ],
+        "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     }
 ]
