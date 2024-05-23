@@ -85,35 +85,35 @@
                       as="h3"
                       class="pb-3 text-center text-xl font-bold text-gray-900 dark:text-white"
                     >
-                      Results
+                      You Should Eat...
                     </DialogTitle>
                     <div class="mt-2">
                       <table class="w-full table-auto">
                         <tr>
-                          <th class="py-2 text-left" colspan="2">Restaurant:</th>
-                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-2 text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Restaurant:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ choice.restaurant }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="py-2 text-left" colspan="2">Item:</th>
-                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-2 text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Item:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ choice.item }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="py-2 text-left" colspan="2">Price:</th>
-                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-2 text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Price:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ '$ ' + Math.round(choice.price).toLocaleString() + ' ' }}GYD
                           </td>
                         </tr>
                         <tr>
-                          <th class="py-2 text-left" colspan="2">Contact:</th>
-                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-2 text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Contact:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             <span v-for="(contact, index) in choice.contact" :key="index">
                               <a :href="`tel:${contact}`">{{ contact }}</a>
                               <span v-if="index < choice.contact.length - 1">, </span>
@@ -121,9 +121,9 @@
                           </td>
                         </tr>
                         <tr>
-                          <th class="py-2 text-left" colspan="2">Notes:</th>
-                          <td class="py-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="py-2 text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Notes:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ choice.notes }}
                           </td>
                         </tr>
