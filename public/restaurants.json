@@ -117,7 +117,10 @@
             2400,
             1800
         ],
-        "contact": "6510012, 6918005",
+        "contact": [
+            6510012,
+            6918005
+        ],
         "notes": "Payments can be made through MMG to 6510012"
     },
     {
@@ -220,7 +223,9 @@
             4760,
             4860
         ],
-        "contact": "2267337",
+        "contact": [
+            2267337
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -301,7 +306,9 @@
             4760,
             4860
         ],
-        "contact": "2267337",
+        "contact": [
+            2267337
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -382,7 +389,9 @@
             4760,
             4860
         ],
-        "contact": "2204366",
+        "contact": [
+            2204366
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -463,7 +472,9 @@
             4760,
             4860
         ],
-        "contact": "6233479",
+        "contact": [
+            6233479
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -544,7 +555,9 @@
             4760,
             4860
         ],
-        "contact": "2650264",
+        "contact": [
+            2650264
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -625,7 +638,9 @@
             4760,
             4860
         ],
-        "contact": "6230800",
+        "contact": [
+            6230800
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -706,7 +721,9 @@
             4760,
             4860
         ],
-        "contact": "2227299",
+        "contact": [
+            2227299
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     },
     {
@@ -780,9 +797,16 @@
             4860,
             4860,
             4760,
+            4860,
+            4760,
+            4760,
+            4760,
+            4760,
             4860
         ],
-        "contact": "2267337",
+        "contact": [
+            2267337
+        ],
         "notes": "Order online: <a class='underline text-blue-500' href='https://www.pizzahutguyana.com/' target='_blank'>https://www.pizzahutguyana.com/</a>"
     }
 ]
