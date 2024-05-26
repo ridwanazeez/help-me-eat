@@ -42,7 +42,7 @@
           </button>
           <p class="text-center font-medium text-gray-300">
             Made with ♥ by
-            <a href="https://ridwanazeez.github.io/" class="underline" target="_blank">me</a>
+            <a href="https://ridwanazeez.com/" class="underline" target="_blank">me</a>
             <br />
           </p>
         </div>
