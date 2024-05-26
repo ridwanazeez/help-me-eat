@@ -85,30 +85,45 @@
                       as="h3"
                       class="pb-3 text-center text-xl font-bold text-gray-900 dark:text-white"
                     >
-                      Results
+                      You Should Eat...
                     </DialogTitle>
                     <div class="mt-2">
                       <table class="w-full table-auto">
                         <tr>
-                          <th class="text-left" colspan="2">Restaurant:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Restaurant:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ choice.restaurant }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="text-left" colspan="2">Item:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Item:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ choice.item }}
                           </td>
                         </tr>
                         <tr>
-                          <th class="text-left" colspan="2">Price:</th>
-                          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                          <td class="text-right">
+                          <th class="py-1 text-left align-top" colspan="2">Price:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
                             {{ '$ ' + Math.round(choice.price).toLocaleString() + ' ' }}GYD
                           </td>
+                        </tr>
+                        <tr>
+                          <th class="py-1 text-left align-top" colspan="2">Contact:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td class="py-1 text-right align-top">
+                            <span v-for="(contact, index) in choice.contact" :key="index">
+                              <a :href="`tel:${contact}`">{{ contact }}</a>
+                              <span v-if="index < choice.contact.length - 1">, </span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="py-1 text-left align-top" colspan="2">Notes:</th>
+                          <td class="py-1 align-top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                          <td v-html="choice.notes" class="py-1 text-right align-top"></td>
                         </tr>
                       </table>
                     </div>
@@ -160,7 +175,9 @@ export default {
       choice: {
         restaurant: '',
         item: '',
-        price: ''
+        price: '',
+        contact: [],
+        notes: ''
       },
       restaurants: []
     }
@@ -207,6 +224,8 @@ export default {
       this.choice.restaurant = randomRestaurant.name
       this.choice.item = randomMenuItem.item
       this.choice.price = randomMenuItem.price
+      this.choice.contact = randomRestaurant.contact
+      this.choice.notes = randomRestaurant.notes
       this.show = !this.show
     }
   }
