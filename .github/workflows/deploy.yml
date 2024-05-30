@@ -47,8 +47,9 @@ jobs:
       - name: Copy files via SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          APP_DIRECTORY: ${{ secrets.APP_DIRECTORY }}
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./dist/ yzgcytmy@162.241.24.59:~/public_html/website_763f228f/help-me-eat
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./dist/ yzgcytmy@162.241.24.59:$APP_DIRECTORY
